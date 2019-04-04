@@ -5,8 +5,6 @@ import React from 'react'
 export const SendData = InnerComponent => {
     class SomeClass extends React.Component{
         state = {
-            value: 'Hello',
-            value2: 'World',
             data: []
         };
 
@@ -21,8 +19,6 @@ export const SendData = InnerComponent => {
             return(
                 <InnerComponent
                     {...this.props}
-                    hello={this.state.value}
-                    world={this.state.value2}
                     data={this.state.data}
                 />
             )
